@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: lightblue;
+      padding-top: 100px;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My First Website!</h1>
+  <p>I am learning to code!</p>
+
+  <button onclick="changeColor()">
+    Change Background
+  </button>
+
+  <script>
+    function changeColor() {
+      document.body.style.background =
+        document.body.style.background === "lightblue"
+          ? "lightgreen"
+          : "lightblue";
+    }
+  </script>
+
+</body>
+</html>
